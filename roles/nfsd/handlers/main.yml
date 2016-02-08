@@ -1,0 +1,9 @@
+---
+# file: roles/nfsd/handlers/main.yml
+- name: nfsd restart
+  service: name={{item}} state=restarted
+    - rpcbind
+    - nfsd
+
+- name: exportfs restart
+  shell: exportfs -r
