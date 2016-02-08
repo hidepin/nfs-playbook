@@ -1,0 +1,2 @@
+nfs_user: "hidepin"
+nfs_dir: "/opt/share/nfs"
